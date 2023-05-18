@@ -11,12 +11,14 @@ if(a==b){
 } else {
     document.write(' (questão 3) multiplicação: ', a*b, )
 }
+
+
 if(prestaçao==1){
-    document.write('(questão 4) o preço total a pagar será: ',preco)
+    document.write(`(questão 4) o preço total a pagar será: ${preco}`)
 } else if (prestaçao<=3){
-    document.write('(questão 4) o preço total a pagar será: ',preco + acrescimo1, ' e a parcela ficará: ', (preco + acrescimo1)/prestaçao )
+    document.write('(questão 4) o preço total a pagar será: ',preco + acrescimo1, ' e a parcela ficará: ', Math.round((preco + acrescimo1)/prestaçao ))
 } else if (prestaçao>=4) {
-    document.write(' (questão4) o preço total será: ', acrescimo2 + preco, ' e a parcela ficará: ', (preco + acrescimo2)/prestaçao)
+    document.write(' (questão4) o preço total será: ', acrescimo2 + preco, ' e a parcela ficará: ', Math.round((preco + acrescimo2)/prestaçao))
 }
 
 
